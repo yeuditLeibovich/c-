@@ -1,0 +1,35 @@
+﻿  Simulator.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\memory(3416,35): error C2661: 'std::tuple<void (__thiscall Cammera::* )(void),std::thread>::tuple': no overloaded function takes 2 arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(66): message : see reference to function template instantiation 'std::unique_ptr<_Tuple,std::default_delete<_Tuple>> std::make_unique<_Tuple,_Ty,std::thread&,0>(_Ty &&,std::thread &)' being compiled
+          with
+          [
+              _Ty=void (__thiscall Cammera::* )(void)
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(89): message : see reference to function template instantiation 'void std::thread::_Start<_Ty,std::thread&>(_Fn &&,std::thread &)' being compiled
+          with
+          [
+              _Ty=void (__thiscall Cammera::* )(void),
+              _Fn=void (__thiscall Cammera::* )(void)
+          ]
+C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\project\Simulator.cpp(12): message : see reference to function template instantiation 'std::thread::thread<void(__thiscall Cammera::* )(void),std::thread&,0>(_Fn &&,std::thread &)' being compiled
+          with
+          [
+              _Fn=void (__thiscall Cammera::* )(void)
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(55,14): error C2672: 'invoke': no matching overloaded function found
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(61): message : see reference to function template instantiation 'unsigned int std::thread::_Invoke<_Tuple,0,1>(void *) noexcept' being compiled
+          with
+          [
+              _Tuple=_Tuple
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(66): message : see reference to function template instantiation 'unsigned int (__stdcall *std::thread::_Get_invoke<_Tuple,0,1>(std::integer_sequence<size_t,0,1>) noexcept)(void *)' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(51,5): error C2893: Failed to specialize function template 'unknown-type std::invoke(_Callable &&,_Ty1 &&,_Types2 &&...) noexcept(<expr>)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\type_traits(1589): message : see declaration of 'std::invoke'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : With the following template arguments:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : '_Callable=void (__thiscall Cammera::* )(void)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : '_Ty1=std::thread'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(51,5): message : '_Types2={}'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\thread(51,5): error C2780: 'unknown-type std::invoke(_Callable &&) noexcept(<expr>)': expects 1 arguments - 2 provided
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.29.30133\include\type_traits(1583): message : see declaration of 'std::invoke'
+  Status.cpp
+  Generating Code...

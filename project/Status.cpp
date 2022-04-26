@@ -1,6 +1,18 @@
 #include "Status.h"
 
-void Status::parseMessage() {
+Status::Status(unsigned char* massege, int id) :Message(id) {
+	this->messageBuffer = (unsigned char*)malloc(14 * sizeof(char));
+	if (this->messageBuffer != NULL)
+		memcpy(this->messageBuffer, massege, 14 * sizeof(char));
+	this->status1 = 0;
+}
+
+Status::Status(short status, int id) :Message(id) {
+	this->status1 = status;
+	this->messageType = 1;
+}
+
+void  Status::parseMessage() {
 	if (this->messageBuffer != NULL)
 		return;
 	this->messageBuffer = (unsigned char*)malloc(14 * sizeof(char));
@@ -21,15 +33,5 @@ void Status::print() {
 	std::cout << "messageType:" << this->messageType << " status:" << this->status1;
 }
 
-Status::Status(unsigned char* massege, int id) :Message(id) {
-	this->messageBuffer = (unsigned char*)malloc(14 * sizeof(char));
-	if (this->messageBuffer != NULL)
-		memcpy(this->messageBuffer, massege, 14 * sizeof(char));
-	this->status1 = 0;
-}
 
-Status::Status(short status, int id) :Message(id) {
-	this->status1 = status;
-	this->messageType = 1;
-}
 

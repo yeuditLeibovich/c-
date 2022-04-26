@@ -1,5 +1,21 @@
 #include "Discovery.h"
 
+Discovery::Discovery(unsigned char* massege, int id) :Message(id) {
+	this->messageBuffer = (unsigned char*)malloc(14 * sizeof(char));
+	if (this->messageBuffer != NULL)
+		memcpy(this->messageBuffer, massege, 14 * sizeof(char));
+	this->angle = 0;
+	this->distance = 0;
+	this->speed = 0;
+}
+
+Discovery::Discovery(float distance, float angle, float speed, int id) :Message(id) {
+	this->angle = angle;
+	this->distance = distance;
+	this->speed = speed;
+	this->messageType = 2;
+}
+
 void Discovery::parseMessage() {
 	if (this->messageBuffer != NULL)
 		return;
@@ -11,9 +27,9 @@ void Discovery::parseMessage() {
 	place += sizeof(this->messageType);
 	memcpy((this->messageBuffer + place), &(this->distance), sizeof(this->distance));
 	place += sizeof(this->distance);
-	memcpy((this->messageBuffer + place), &(this->distance), sizeof(this->angle));
+	memcpy((this->messageBuffer + place), &(this->angle), sizeof(this->angle));
 	place += sizeof(this->angle);
-	memcpy((this->messageBuffer + place), &(this->distance), sizeof(this->speed));
+	memcpy((this->messageBuffer + place), &(this->speed), sizeof(this->speed));
 }
 
 void Discovery::parseBack() {
@@ -34,18 +50,4 @@ void Discovery::print() {
 		<< this->distance << " angle:" << this->angle << " speed:" << this->speed;
 }
 
-Discovery::Discovery(unsigned char* massege, int id) :Message(id) {
-	this->messageBuffer = (unsigned char*)malloc(14 * sizeof(char));
-	if (this->messageBuffer != NULL)
-		memcpy(this->messageBuffer, massege, 14 * sizeof(char));
-	this->angle = 0;
-	this->distance = 0;
-	this->speed = 0;
-}
 
-Discovery::Discovery(float distance, float angle, float speed, int id) :Message(id) {
-	this->angle = angle;
-	this->distance = distance;
-	this->speed = speed;
-	this->messageType = 2;
-}

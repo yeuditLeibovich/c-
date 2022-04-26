@@ -6,7 +6,7 @@
 class Buffer
 {
 private:
-	char** buffer;
+	char** buffer = NULL;
 	int index = 0;
 public:
 	void addToBuffer(char* );

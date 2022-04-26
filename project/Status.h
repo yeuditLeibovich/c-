@@ -10,8 +10,8 @@ public:
 	short status1;
 	Status(unsigned char*, int);
 	Status(short, int);
-	virtual void  parseMessage();
-	virtual void  parseBack();
-	virtual void  print();
+	void  parseMessage();
+	void  parseBack();
+	void  print();
 };
 #endif

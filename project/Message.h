@@ -10,9 +10,9 @@ protected:
 	int messageType;
 public:
 	Message(int);
-	virtual void  parseMessage();
-	virtual void  parseBack();
-	virtual void  print();
+	virtual void parseMessage();
+	virtual void parseBack();
+	virtual void print();
 	unsigned char* getMessageBuffer();
 	Message();
 };

@@ -5,9 +5,10 @@
 class Simulator
 {
 private:
-	Cammera cammeras[10];
+	Cammera* cammeras[5];
 
 public:
+	Simulator();
 	void runCammeras();
 };
 #endif 

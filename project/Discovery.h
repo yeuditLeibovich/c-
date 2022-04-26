@@ -13,8 +13,8 @@ public:
     float speed;
     Discovery(unsigned char*, int);
     Discovery(float, float, float, int);
-    virtual void  parseMessage();
-    virtual void  parseBack();
-    virtual void  print();
+     void  parseMessage();
+     void  parseBack();
+     void  print();
 };
 #endif 

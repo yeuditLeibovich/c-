@@ -28,12 +28,18 @@ void Buffer::addToBuffer(char* m) {
 		}
 		strcpy(buffer[index], m);			
 		index = index + 1;
+		
 	}
-	
+	/*std::cout<<this->getBuffer();*/
+    std::cout << this->buffer;
 }
+
 char** Buffer::getBuffer() {
+	
 	return this->buffer;
 }
+
+
 void Buffer::cleanBuffer() {
 	for (int i = 0; i < index; i++)
 	{

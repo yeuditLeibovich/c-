@@ -10,6 +10,7 @@ private:
 public:
 	Simulator();
 	void runCammeras();
+	void sendAllCamerasToServer();
 };
 #endif 
 

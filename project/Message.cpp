@@ -8,6 +8,7 @@ Message::Message(int id) {
 
 void Message::parseMessage()
 {
+
 }
 
 void Message::parseBack()
@@ -16,8 +17,8 @@ void Message::parseBack()
 
 void Message::print()
 {
-}
 
+}
 
 unsigned char* Message::getMessageBuffer() {
 	return this->messageBuffer;

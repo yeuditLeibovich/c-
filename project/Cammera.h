@@ -17,8 +17,10 @@ public:
 	void addMessage(Message*);
 	void generate();
 	void sendToBuffer();
+	void sendToServer();
 	void run();
 	void stop();
+	/*void print();*/
 };
 #endif
 

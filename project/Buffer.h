@@ -5,13 +5,14 @@
 
 class Buffer
 {
-private:
+public:
 	char** buffer = NULL;
 	int index = 0;
 public:
 	void addToBuffer(char* );
 	char** getBuffer();
 	void cleanBuffer();
+	
 };
 #endif
 

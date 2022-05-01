@@ -155,6 +155,9 @@
     <ClInclude Include="Simulator.h" />
     <ClInclude Include="Status.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="XMLFile.xml" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,12 +18,14 @@ void Simulator::runCammeras() {
 
 
 	std::thread t[5];
+	std::thread sendToServer[5];
 	/*std::thread sendToServer = std::thread(&sendAllCamerasToServer);*/
 
 	for (int i = 0; i < 5; i++)
 	{
 		//myThreads[i] = new thread(i);
 		t[i]=std::thread(&Cammera::run,(*(cammeras[i])));
+		sendToServer[i] = std::thread(&Cammera::sendToServer, (*(cammeras[i])));
 		
 	}
 	std::cout << "enter to stop";
@@ -34,6 +36,7 @@ void Simulator::runCammeras() {
 		/*cammeras[i]->print();*/
 		cammeras[i]->stop();
 		t[i].detach();
+		sendToServer[i].detach();
 	}	
 
 }

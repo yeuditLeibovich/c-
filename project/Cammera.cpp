@@ -69,6 +69,9 @@ void Cammera::sendToBuffer() {
 	std::cout << "send\n";
 }
 void Cammera::sendToServer() {
+	while (isActive) {
+		Sleep(2000);
+	
 	WSAData wsaData;
 	WORD DllVersion = MAKEWORD(2, 1);
 	if (WSAStartup(DllVersion, &wsaData) != 0) {
@@ -99,7 +102,7 @@ void Cammera::sendToServer() {
 		cout << "Error Connecting to Host" << endl;
 		exit(1);
 	}
-	return ;
+	}
 }
 
 void Cammera::run() {
@@ -109,8 +112,8 @@ void Cammera::run() {
 			generate();
 		}
 		sendToBuffer();
-		Sleep(3);
-		sendToServer();
+	/*	Sleep(3);
+		sendToServer();*/
 	}
 
 }

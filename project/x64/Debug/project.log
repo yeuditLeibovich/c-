@@ -1,11 +1,4 @@
-﻿  Buffer.cpp
-C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\project\Buffer.cpp(16,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\project\Buffer.cpp(29,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Cammera.cpp
-C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\project\Cammera.cpp(93,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\project\Cammera.cpp(81,10): warning C4101: 'ipvalue': unreferenced local variable
-  Simulator.cpp
-C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\project\Simulator.cpp(16,38): warning C4312: 'type cast': conversion from 'int' to 'char *' of greater size
-  project.cpp
-  Generating Code...
-  project.vcxproj -> C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\x64\Debug\project.exe
+﻿  Cammera.cpp
+C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\c-\project\Cammera.cpp(96,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\c-\project\Cammera.cpp(84,10): warning C4101: 'ipvalue': unreferenced local variable
+  project.vcxproj -> C:\Users\user1\Desktop\תכנות\irox\c++\project\c-\c-\x64\Debug\project.exe

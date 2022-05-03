@@ -58,6 +58,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="XMLFile.xml" />
+    <Text Include="config.txt" />
   </ItemGroup>
 </Project>

@@ -156,7 +156,7 @@
     <ClInclude Include="Status.h" />
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="XMLFile.xml" />
+    <Text Include="config.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
